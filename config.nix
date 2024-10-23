@@ -11,8 +11,12 @@ let
         (vimPlugins.nvim-treesitter.withPlugins (
           p: with p; [
             c
-            commonlisp
             comment
+            commonlisp
+            fish
+            json
+            jsonc
+            latex
             lua
             markdown
             markdown_inline
@@ -29,19 +33,18 @@ let
         ];
   };
 in
-stdenv.mkDerivation (
-  envVars
-  // {
-    pname = "pipopo-nvim";
-    version = "latest";
-    src = ./nvim;
+  stdenv.mkDerivation (
+    envVars // {
+      pname = "pipopo-nvim";
+      version = "latest";
+      src = ./nvim;
 
-    installPhase = ''
-      mkdir -p $out
-      for file in $(find . -type f); do
-        substituteAllInPlace "$file"
-      done
-      cp -r ./ $out
-    '';
-  }
-)
+      installPhase = ''
+        mkdir -p $out
+        for file in $(find . -type f); do
+          substituteAllInPlace "$file"
+        done
+        cp -r ./ $out
+      '';
+    }
+  )
