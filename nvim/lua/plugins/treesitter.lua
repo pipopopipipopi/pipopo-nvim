@@ -4,7 +4,7 @@ return {
     event = "BufRead",
     opts = {
         auto_install = false,
-        highllight = { enable = true },
+        highlight = { enable = true },
         indent = {enable = true},
     },
     config = function(_, opts)
