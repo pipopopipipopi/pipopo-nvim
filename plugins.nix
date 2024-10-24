@@ -36,4 +36,5 @@ in
 
     # misc
     no-neck-pain-nvim
+    nvim-scrollbar
   ]
