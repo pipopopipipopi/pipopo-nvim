@@ -33,4 +33,7 @@ in
     lualine-nvim
     #noice-nvim
     #nui-nvim
+
+    # misc
+    no-neck-pain-nvim
   ]

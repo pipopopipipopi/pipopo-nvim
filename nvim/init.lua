@@ -7,7 +7,6 @@ vim.cmd("set runtimepath+=" .. configpath)
 ---------------------------------------------
 
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 
 vim.loader.enable()
 
