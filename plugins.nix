@@ -41,8 +41,8 @@ in
     
     # ui
     lualine-nvim
-    #noice-nvim
-    #nui-nvim
+    noice-nvim
+    nui-nvim
 
     # misc
     no-neck-pain-nvim
