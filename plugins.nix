@@ -29,6 +29,16 @@ in
     # treesitter
     nvim-treesitter
 
+    # cmp
+    nvim-cmp
+    cmp-nvim-lsp
+    cmp-buffer
+    cmp-cmdline
+    cmp-path
+
+    # lsp
+    nvim-lspconfig
+    
     # ui
     lualine-nvim
     #noice-nvim
@@ -37,4 +47,5 @@ in
     # misc
     no-neck-pain-nvim
     nvim-scrollbar
+    comment-nvim
   ]
