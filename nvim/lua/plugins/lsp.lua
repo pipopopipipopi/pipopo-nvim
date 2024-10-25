@@ -6,13 +6,7 @@ return {
         config = function()
             local lspconfig = require("lspconfig")
             -- Lua
-            lspconfig.lua_ls.setup({
-                settings = {
-                    Lua = {
-                        diagnostics = { globals = { "vim" } },
-                    },
-                },
-            })
+            lspconfig.lua_ls.setup({})
             -- Nix
             lspconfig.nil_ls.setup({})
             --Rust
