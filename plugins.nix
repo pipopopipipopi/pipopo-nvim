@@ -25,6 +25,7 @@ in
     telescope-nvim
     plenary-nvim
     telescope-file-browser-nvim
+    telescope-frecency-nvim
 
     # treesitter
     nvim-treesitter
@@ -43,9 +44,9 @@ in
     lualine-nvim
     noice-nvim
     nui-nvim
+    nvim-scrollbar
 
     # misc
     no-neck-pain-nvim
-    nvim-scrollbar
     comment-nvim
   ]

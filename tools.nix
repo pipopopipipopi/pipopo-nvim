@@ -4,6 +4,10 @@
     # Inner tools
     ## For telescope.nvim
     ripgrep
+    fd
+
+    # LaTeX
+    texlab
 
     # Lua
     lua-language-server
@@ -12,9 +16,12 @@
     nil
 
     # Python
-    pyright
+    ruff
 
     # Rust
     rust-analyzer
+
+    # SystemVerilog
+    verible
   ];
 }
