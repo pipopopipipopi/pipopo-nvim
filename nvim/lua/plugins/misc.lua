@@ -2,7 +2,7 @@ return {
     {
         name = "no-neck-pain.nvim",
         dir = "@no_neck_pain_nvim@",
-        event = "BufRead",
+        event = { "BufReadPost", "BufNewFile" },
         opts = {
             autocmds = {
                 enableOnVimEnter = true,
@@ -11,9 +11,9 @@ return {
     },
 
     {
-        name = "Comment.nvim",
-        dir = "@comment_nvim@",
-        event = "BufRead",
+        name = "ts-comments.nvim",
+        dir = "@ts_comments_nvim@",
+        event = { "BufReadPost", "BufNewFile" },
         opts = {},
     }
 }

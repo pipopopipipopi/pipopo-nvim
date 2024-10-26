@@ -48,5 +48,5 @@ in
 
     # misc
     no-neck-pain-nvim
-    comment-nvim
+    ts-comments-nvim
   ]

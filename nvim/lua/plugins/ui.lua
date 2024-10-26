@@ -19,13 +19,13 @@ return {
                 },
             },
         },
-        dependencies = { name = "nui.nvim", dir = "@nui_nvim@" }
+        dependencies = { name = "nui.nvim", dir = "@nui_nvim@" },
     },
 
     {
         name = "nvim-scrollbar",
         dir = "@nvim_scrollbar@",
-        event = "BufRead",
+        event = { "BufReadPost", "BufNewFile" },
         opts = {},
     },
 }

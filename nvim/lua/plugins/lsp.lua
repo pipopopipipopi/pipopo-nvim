@@ -2,7 +2,7 @@ return {
     {
         name = "nvim-lspconfig",
         dir = "@nvim_lspconfig@",
-        event = { "BufReadPre", "BufNewFile" },
+        event = { "BufReadPost", "BufNewFile" },
         config = function()
             local lspconfig = require("lspconfig")
             -- LaTeX
