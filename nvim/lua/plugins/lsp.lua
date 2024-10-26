@@ -3,24 +3,32 @@ return {
         name = "nvim-lspconfig",
         dir = "@nvim_lspconfig@",
         event = { "BufReadPost", "BufNewFile" },
-        config = function()
-            local lspconfig = require("lspconfig")
-            -- LaTeX
-            lspconfig.texlab.setup{}
-            -- Lua
-            lspconfig.lua_ls.setup({
-                settings = {
-                    Lua = {
-                        diagnostics = { globals = { "vim" } },
+        opts = {
+            servers = {
+                -- LaTeX
+                texlab = {},
+                -- Lua
+                lua_ls = {
+                    settings = {
+                        Lua = {
+                            diagnostics = { globals = { "vim" } },
+                        },
                     },
                 },
-            })
-            -- Nix
-            lspconfig.nil_ls.setup{}
-            -- Python
-            lspconfig.ruff.setup{}
-            -- Rust
-            lspconfig.rust_analyzer.setup{}
+                -- Nix
+                nil_ls = {},
+                -- Python
+                ruff = {},
+                -- Rust
+                rust_analyzer = {},
+            },
+        },
+        config = function(_, opts)
+            local lspconfig = require("lspconfig")
+            for server, server_opts in pairs(opts.servers) do
+                lspconfig[server].setup(server_opts)
+            end
         end,
     },
 }
+
