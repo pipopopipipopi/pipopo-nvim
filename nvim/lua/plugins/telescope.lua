@@ -16,6 +16,11 @@ return {
                     "-uu",
                 },
             },
+            extentions = {
+                frecency = {
+                    db_safe_mode = false,
+                },
+            },
         },
         dependencies = {
             { name = "plenary.nvim", dir = "@plenary_nvim@" },
@@ -26,6 +31,7 @@ return {
     {
         name = "telescope-frecency.nvim",
         dir = "@telescope_frecency_nvim@",
+        cmd = "Telescope",
         config = function()
             require("telescope").load_extention "frecency"
         end,
