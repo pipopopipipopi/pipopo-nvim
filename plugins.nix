@@ -41,7 +41,7 @@ in
     nvim-lspconfig
     
     # ui
-    lualine-nvim
+    heirline-nvim
     noice-nvim
     nui-nvim
     nvim-scrollbar
