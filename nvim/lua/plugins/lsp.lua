@@ -21,8 +21,6 @@ return {
             lspconfig.ruff.setup{}
             -- Rust
             lspconfig.rust_analyzer.setup{}
-            -- SystemVerilog
-            lspconfig.verible.setup{}
         end,
     },
 }

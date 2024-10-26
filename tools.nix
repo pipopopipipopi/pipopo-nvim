@@ -20,8 +20,5 @@
 
     # Rust
     rust-analyzer
-
-    # SystemVerilog
-    verible
   ];
 }
