@@ -63,7 +63,7 @@ local ViMode = {
     end,
     hl = function(self)
         local mode = self.mode:sub(1, 1)
-        return { fg = "bg", bg = self.mode_colors[mode] }
+        return { fg = "black", bg = self.mode_colors[mode] }
     end,
     update = {
         "ModeChanged",
@@ -203,7 +203,7 @@ local Ruler = {
 
 local ScrollBar ={
     static = {
-        sbar = { "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" }
+        sbar = { "󰝦", "󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪣", "󰪥" },
     },
     provider = function(self)
         local curr_line = vim.api.nvim_win_get_cursor(0)[1]

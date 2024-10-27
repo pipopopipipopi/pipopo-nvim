@@ -6,5 +6,10 @@ return {
         options = {
             transparent = true,
         },
+        palettes = {
+            duskfox = {
+                bg0 = "NONE",
+            },
+        },
     },
 }

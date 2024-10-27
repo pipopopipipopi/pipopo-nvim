@@ -9,8 +9,10 @@ return {
                 tabline = require("plugins.heirline.tabline"),
                 opts = {
                     colors = {
-                        bg = "#191726",
+                        -- bg = "#191726",
+                        bg = "NONE",
                         fg = "#cdcbe0",
+                        black = "#393552",
                         red = "#eb6f92",
                         green = "#a3be8c",
                         yellow = "#f6c177",
