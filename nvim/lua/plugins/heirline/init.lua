@@ -2,7 +2,7 @@ return {
     {
         name = "heirline.nvim",
         dir = "@heirline_nvim@",
-        event = "BufEnter",
+        event = { "BufReadPost", "BufNewFile" },
         opts = function()
             return {
                 statusline = require("plugins.heirline.statusline"),

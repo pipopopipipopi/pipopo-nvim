@@ -54,8 +54,8 @@ local ViMode = {
             ["\19"] = "purple",
             R = "red",
             r = "red",
-            ["!"] = "green1",
-            t = "green1",
+            ["!"] = "green",
+            t = "green",
         },
     },
     provider = function(self)
@@ -154,7 +154,7 @@ local Diagnostics = {
         provider = function(self)
             return self.errors > 0 and (self.error_icon .. " " .. self.errors .. " ")
         end,
-        hl = { fg = "red1" },
+        hl = { fg = "red" },
     },
     {
         provider = function(self)
@@ -166,13 +166,13 @@ local Diagnostics = {
         provider = function(self)
             return self.info > 0 and (self.info_icon .. " " .. self.info .. " ")
         end,
-        hl = { fg = "blue2" },
+        hl = { fg = "blue" },
     },
     {
         provider = function(self)
             return self.hints > 0 and (self.hint_icon .. " " .. self.hints .. " ")
         end,
-        hl = { fg = "teal" },
+        hl = { fg = "cyan" },
     },
     {
         provider = " ",

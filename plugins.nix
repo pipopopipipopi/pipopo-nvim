@@ -45,8 +45,11 @@ in
     noice-nvim
     nui-nvim
     nvim-scrollbar
+    dashboard-nvim
 
     # misc
     no-neck-pain-nvim
     ts-comments-nvim
+    toggleterm-nvim
+    nvim-colorizer-lua
   ]

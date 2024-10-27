@@ -2,10 +2,14 @@ return {
     {
         name = "nvim-cmp",
         dir = "@nvim_cmp@",
-        event = "InsertEnter",
+        event = { "InsertEnter", "CmdlineEnter" },
         opts = function()
             local cmp = require("cmp")
             return {
+                window = {
+                    completion = cmp.config.window.bordered(),
+                    documentation = cmp.config.window.bordered(),
+                },
                 mapping = cmp.mapping.preset.insert({
                     ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
                     ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
