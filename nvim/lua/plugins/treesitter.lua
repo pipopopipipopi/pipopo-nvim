@@ -2,7 +2,7 @@ return {
     {
         name = "nvim-treesitter",
         dir = "@nvim_treesitter@",
-        event = { "BufReadPost", "BufNewFile", "VeryLazy" },
+        event = { "BufReadPost", "BufNewFile" },
         opts = {
             auto_install = false,
             highlight = { enable = true },

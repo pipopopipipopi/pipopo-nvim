@@ -19,8 +19,8 @@ return {
                 },
             },
         },
-        dependencies = { name = "nui.nvim", dir = "@nui_nvim@" },
     },
+    { name = "nui.nvim", dir = "@nui_nvim@" },
 
     {
         name = "nvim-scrollbar",

@@ -2,7 +2,7 @@ return {
     {
         name = "telescope.nvim",
         dir = "@telescope_nvim@",
-        event = "VimEnter",
+        event = "VeryLazy",
         opts = {
             defaults = {
                 vimgrep_arguments = {
@@ -22,16 +22,12 @@ return {
                 },
             },
         },
-        dependencies = {
-            { name = "plenary.nvim", dir = "@plenary_nvim@" },
-            { name = "telescope-file-browser.nvim", dir = "@telescope_file_browser_nvim@" },
-        },
     },
-
+    { name = "plenary.nvim", dir = "@plenary_nvim@" },
+    { name = "telescope-file-browser.nvim", dir = "@telescope_file_browser_nvim@" },
     {
         name = "telescope-frecency.nvim",
         dir = "@telescope_frecency_nvim@",
-        cmd = "Telescope",
         config = function()
             require("telescope").load_extention "frecency"
         end,

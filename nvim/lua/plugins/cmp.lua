@@ -27,11 +27,9 @@ return {
                 }),
             }
         end,
-        dependencies = {
-            { name = "cmp-nvim-lsp", dir = "@cmp_nvim_lsp@" },
-            { name = "cmp-buffer", dir = "@cmp_buffer@" },
-            { name = "cmp-cmdline", dir = "@cmp_cmdline@" },
-            { name = "cmp-path", dir = "@cmp_path@" },
-        }
-    }
+    },
+    { name = "cmp-nvim-lsp", dir = "@cmp_nvim_lsp@" },
+    { name = "cmp-buffer", dir = "@cmp_buffer@" },
+    { name = "cmp-cmdline", dir = "@cmp_cmdline@" },
+    { name = "cmp-path", dir = "@cmp_path@" },
 }
