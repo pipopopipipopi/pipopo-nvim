@@ -28,8 +28,8 @@ return {
             }
         end,
     },
-    { name = "cmp-nvim-lsp", dir = "@cmp_nvim_lsp@" },
-    { name = "cmp-buffer", dir = "@cmp_buffer@" },
-    { name = "cmp-cmdline", dir = "@cmp_cmdline@" },
-    { name = "cmp-path", dir = "@cmp_path@" },
+    { name = "cmp-nvim-lsp", dir = "@cmp_nvim_lsp@", event = { "InsertEnter", "CmdlineEnter" } },
+    { name = "cmp-buffer", dir = "@cmp_buffer@", event = "InsertEnter" },
+    { name = "cmp-cmdline", dir = "@cmp_cmdline@", event = "CmdlineEnter" },
+    { name = "cmp-path", dir = "@cmp_path@", event = { "InsertEnter", "CmdlineEnter" } },
 }
