@@ -6,6 +6,9 @@
     ripgrep
     fd
 
+    # C
+    ccls
+
     # LaTeX
     texlab
 
@@ -20,5 +23,8 @@
 
     # Rust
     rust-analyzer
+
+    # Verilog
+    svls
   ];
 }

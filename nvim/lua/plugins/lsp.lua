@@ -5,6 +5,8 @@ return {
         event = { "BufReadPost", "BufNewFile" },
         opts = {
             servers = {
+                -- C
+                ccls = {},
                 -- LaTeX
                 texlab = {},
                 -- Lua
@@ -21,6 +23,8 @@ return {
                 ruff = {},
                 -- Rust
                 rust_analyzer = {},
+                -- Verilog
+                svls = {},
             },
         },
         config = function(_, opts)

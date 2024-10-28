@@ -10,12 +10,13 @@ let
       lib.pipe
         (vimPlugins.nvim-treesitter.withPlugins (
           p: with p; [
+            bash
             c
             comment
             commonlisp
+            cpp
             fish
             json
-            jsonc
             latex
             lua
             markdown
@@ -25,6 +26,7 @@ let
             regex
             rust
             toml
+            verilog
             vim
           ]
         )).dependencies
