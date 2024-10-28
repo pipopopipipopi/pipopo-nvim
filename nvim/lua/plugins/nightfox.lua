@@ -11,5 +11,10 @@ return {
                 bg0 = "NONE",
             },
         },
+        groups = {
+            duskfox = {
+                WinSeparator = { fg = "bg1" },
+            },
+        },
     },
 }
