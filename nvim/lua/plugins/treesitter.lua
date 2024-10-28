@@ -6,7 +6,7 @@ return {
         opts = {
             auto_install = false,
             highlight = { enable = true },
-            indent = { enable = false },
+            indent = { enable = true },
         },
         config = function(_, opts)
             require("nvim-treesitter.configs").setup(opts)

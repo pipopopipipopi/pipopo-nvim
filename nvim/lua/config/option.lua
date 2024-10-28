@@ -16,10 +16,17 @@ vim.opt.cursorline = false
 vim.opt.tabstop = 4
 vim.opt.expandtab = true
 vim.opt.smarttab = true
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 0
+vim.opt.softtabstop = -1
 vim.opt.smartindent = true
 vim.opt.autoindent = true
 vim.opt.breakindent = true
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "nix",
+    callback = function()
+        vim.opt.tabstop = 2
+    end
+})
 
 -- Search
 vim.opt.ignorecase = true
