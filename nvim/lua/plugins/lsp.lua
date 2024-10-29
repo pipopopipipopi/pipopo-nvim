@@ -23,8 +23,6 @@ return {
                 ruff = {},
                 -- Rust
                 rust_analyzer = {},
-                -- Verilog
-                svls = {},
             },
         },
         config = function(_, opts)

@@ -23,8 +23,5 @@
 
     # Rust
     rust-analyzer
-
-    # Verilog
-    svls
   ];
 }
