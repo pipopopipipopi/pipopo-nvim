@@ -19,7 +19,7 @@
     nil
 
     # Python
-    ruff
+    pyright
 
     # Rust
     rust-analyzer

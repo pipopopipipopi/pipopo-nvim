@@ -20,7 +20,7 @@ return {
                 -- Nix
                 nil_ls = {},
                 -- Python
-                ruff = {},
+                pyright = {},
                 -- Rust
                 rust_analyzer = {},
             },
