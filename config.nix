@@ -11,10 +11,8 @@ let
         (vimPlugins.nvim-treesitter.withPlugins (
           p: with p; [
             bash
-            c
             comment
             commonlisp
-            cpp
             fish
             json
             latex
