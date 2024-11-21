@@ -16,17 +16,23 @@ vim.opt.cursorline = false
 vim.opt.tabstop = 4
 vim.opt.expandtab = true
 vim.opt.smarttab = true
-vim.opt.shiftwidth = 0
+vim.opt.shiftwidth = 4
 vim.opt.softtabstop = -1
 vim.opt.smartindent = true
 vim.opt.autoindent = true
-vim.opt.breakindent = true
+local filetype_tabstop = { nix=2 }
+local usrftcfg = vim.api.nvim_create_augroup("UserFileTypeConfig", { clear = true})
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = "nix",
-    callback = function()
-        vim.opt.tabstop = 2
+    group = usrftcfg,
+    callback = function (args)
+        local ftts = filetype_tabstop[args.match]
+        if ftts then
+            vim.bo.tabstop = ftts
+            vim.bo.shiftwidth = ftts
+        end
     end
 })
+
 
 -- Search
 vim.opt.ignorecase = true
