@@ -5,6 +5,9 @@ return {
         event = "VeryLazy",
         opts = {
             defaults = {
+                preview = {
+                    treesitter = false
+                },
                 vimgrep_arguments = {
                     "rg",
                     "--color=never",
