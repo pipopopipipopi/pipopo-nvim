@@ -5,8 +5,6 @@ return {
         event = { "BufReadPost", "BufNewFile" },
         opts = {
             servers = {
-                -- C
-                ccls = {},
                 -- LaTeX
                 texlab = {},
                 -- Lua

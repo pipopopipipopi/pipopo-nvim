@@ -6,9 +6,6 @@
     ripgrep
     fd
 
-    # C
-    ccls
-
     # LaTeX
     texlab
 
