@@ -2,54 +2,50 @@
 let
   normalizedPluginAttr = plugin: {
     "${builtins.replaceStrings
-      [ "-" "." ]
-      [ "_" "_" ]
-      (pkgs.lib.toLower plugin.pname)
-    }" = plugin;
+    [ "-" "." ]
+    [ "_" "_" ]
+    (pkgs.lib.toLower plugin.pname)
+  }" = plugin;
   };
 
   plugins = plugin: builtins.foldl' (x: y: x // y) { } (map normalizedPluginAttr plugin);
 in
   with pkgs.vimPlugins;
-  plugins [
-    # plugin manager
-    lazy-nvim
+plugins [
+  # plugin manager
+  lazy-nvim
 
-    # color scheme
-    nightfox-nvim
+  # color scheme
+  nightfox-nvim
 
-    # () 
-    ultimate-autopair-nvim
-    
-    # telescope
-    telescope-nvim
-    plenary-nvim
-    telescope-file-browser-nvim
-    telescope-frecency-nvim
+  # () 
+  ultimate-autopair-nvim
 
-    # treesitter
-    nvim-treesitter
+  # telescope
+  telescope-nvim
+  plenary-nvim
+  telescope-file-browser-nvim
+  telescope-frecency-nvim
 
-    # cmp
-    nvim-cmp
-    cmp-nvim-lsp
-    cmp-buffer
-    cmp-cmdline
-    cmp-path
+  # treesitter
+  nvim-treesitter
 
-    # lsp
-    nvim-lspconfig
-    
-    # ui
-    heirline-nvim
-    noice-nvim
-    nui-nvim
-    nvim-scrollbar
-    dashboard-nvim
+  # cmp
+  blink-cmp
 
-    # misc
-    no-neck-pain-nvim
-    ts-comments-nvim
-    toggleterm-nvim
-    nvim-colorizer-lua
-  ]
+  # lsp
+  nvim-lspconfig
+
+  # ui
+  heirline-nvim
+  noice-nvim
+  nui-nvim
+  nvim-scrollbar
+  dashboard-nvim
+
+  # misc
+  no-neck-pain-nvim
+  ts-comments-nvim
+  toggleterm-nvim
+  nvim-colorizer-lua
+]
