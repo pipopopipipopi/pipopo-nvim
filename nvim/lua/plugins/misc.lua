@@ -33,4 +33,18 @@ return {
         cmd = "ColorizerAttachToBuffer",
         opts = {},
     },
+
+    {
+        name = "obsidian.nvim",
+        dir = "@obsidian_nvim@",
+        ft = "markdown",
+        opts = {
+            workspaces = {
+                {
+                    name = "inbox",
+                    path = "~/Notes/INBOX",
+                },
+            },
+        },
+    },
 }

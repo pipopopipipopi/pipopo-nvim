@@ -1,9 +1,9 @@
 return {
-    name = "blink-cmp",
+    name = "blink.cmp",
     dir = "@blink_cmp@",
     event = { "InsertEnter", "CmdlineEnter" },
     opts = {
-        keymap = { preset = "enter" },
+        keymap = { preset = "default" },
         appearance = {
             use_nvim_cmp_as_default = false,
             nerd_font_variant = "mono"

@@ -48,4 +48,5 @@ plugins [
   ts-comments-nvim
   toggleterm-nvim
   nvim-colorizer-lua
+  obsidian-nvim
 ]
