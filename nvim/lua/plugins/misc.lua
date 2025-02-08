@@ -1,5 +1,10 @@
 return {
     {
+        name = "plenary.nvim",
+        dir = "@plenary_nvim@",
+    },
+
+    {
         name = "no-neck-pain.nvim",
         dir = "@no_neck_pain_nvim@",
         event = { "BufReadPost", "BufNewFile" },
@@ -38,6 +43,10 @@ return {
         name = "obsidian.nvim",
         dir = "@obsidian_nvim@",
         ft = "markdown",
+        dependencies = {
+            name = "plenary.nvim",
+            dir = "@plenary_nvim@",
+        },
         opts = {
             workspaces = {
                 {

@@ -26,7 +26,6 @@ return {
             },
         },
     },
-    { name = "plenary.nvim", dir = "@plenary_nvim@" },
     { name = "telescope-file-browser.nvim", dir = "@telescope_file_browser_nvim@" },
     {
         name = "telescope-frecency.nvim",

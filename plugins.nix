@@ -24,7 +24,6 @@ plugins [
 
   # telescope
   telescope-nvim
-  plenary-nvim
   telescope-file-browser-nvim
   telescope-frecency-nvim
 
@@ -45,6 +44,7 @@ plugins [
   dashboard-nvim
 
   # misc
+  plenary-nvim
   no-neck-pain-nvim
   ts-comments-nvim
   toggleterm-nvim
