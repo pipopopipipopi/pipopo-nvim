@@ -5,6 +5,9 @@
     ripgrep
     fd
 
+    # Gleam
+    gleam
+
     # LaTeX
     texlab
 
@@ -19,5 +22,8 @@
 
     # Rust
     rust-analyzer
+
+    # Typst
+    tinymist
   ];
 }

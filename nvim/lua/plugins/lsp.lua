@@ -5,6 +5,8 @@ return {
         event = { "BufReadPost", "BufNewFile" },
         opts = {
             servers = {
+                -- Gleam
+                gleam = {},
                 -- LaTeX
                 texlab = {},
                 -- Lua
@@ -21,6 +23,8 @@ return {
                 pyright = {},
                 -- Rust
                 rust_analyzer = {},
+                -- Typst
+                tinymist = {},
             },
         },
         config = function(_, opts)

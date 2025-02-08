@@ -14,6 +14,7 @@ let
             comment
             commonlisp
             fish
+            gleam
             json
             latex
             lua
@@ -24,6 +25,7 @@ let
             regex
             rust
             toml
+            typst
             verilog
             vim
           ]
