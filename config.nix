@@ -11,6 +11,7 @@ let
         (vimPlugins.nvim-treesitter.withPlugins (
           p: with p; [
             bash
+            c
             comment
             commonlisp
             fish
@@ -26,7 +27,6 @@ let
             rust
             toml
             typst
-            verilog
             vim
           ]
         )).dependencies
