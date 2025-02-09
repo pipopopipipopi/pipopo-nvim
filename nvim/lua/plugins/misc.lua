@@ -42,10 +42,9 @@ return {
     {
         name = "obsidian.nvim",
         dir = "@obsidian_nvim@",
-        ft = "markdown",
-        dependencies = {
-            name = "plenary.nvim",
-            dir = "@plenary_nvim@",
+        event = {
+            "BufReadPre " .. vim.fn.expand "~" .. "/Notes/**.md",
+            "BufNewFile " .. vim.fn.expand "~" .. "/Notes/**.md",
         },
         opts = {
             workspaces = {
@@ -54,6 +53,14 @@ return {
                     path = "~/Notes/INBOX",
                 },
             },
+
+            ui = {
+                enable = false,
+            },
+        },
+        dependencies = {
+            name = "plenary.nvim",
+            dir = "@plenary_nvim@",
         },
     },
 }
