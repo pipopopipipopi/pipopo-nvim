@@ -85,6 +85,9 @@ return {
                 end
                 return tostring(os.date("%Y%m%d%H%M%S")) .. "-" .. suffix
             end,
+            attachments = {
+                img_folder = "Files",
+            },
 
             ui = {
                 enable = false,
