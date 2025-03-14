@@ -67,11 +67,13 @@ return {
         opts = {
             workspaces = {
                 {
-                    name = "vaults",
+                    name = "notes",
                     path = "~/Notes",
                 },
             },
             notes_subdir = "000_INBOX",
+            ---@param title string|?
+            ---@return string
             note_id_func = function(title)
                 local suffix = ""
                 if title ~= nil then
@@ -85,8 +87,12 @@ return {
                 end
                 return tostring(os.date("%Y%m%d%H%M%S")) .. "-" .. suffix
             end,
+            templates = {
+                folder = "900_Templates",
+                date_format = "%Y年%m月%d日",
+            },
             attachments = {
-                img_folder = "998_Files",
+                img_folder = "800_Files",
             },
 
             ui = {
