@@ -71,7 +71,7 @@ return {
                     path = "~/Notes",
                 },
             },
-            notes_subdir = "INBOX",
+            notes_subdir = "000_INBOX",
             note_id_func = function(title)
                 local suffix = ""
                 if title ~= nil then
@@ -86,7 +86,7 @@ return {
                 return tostring(os.date("%Y%m%d%H%M%S")) .. "-" .. suffix
             end,
             attachments = {
-                img_folder = "Files",
+                img_folder = "998_Files",
             },
 
             ui = {
