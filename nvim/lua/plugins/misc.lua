@@ -87,7 +87,18 @@ return {
                 end
                 return tostring(os.date("%Y%m%d%H%M%S")) .. "-" .. suffix
             end,
-            disable_frontmatter = true,
+            ---@return table
+            note_frontmatter_func = function(note)
+                local out = { id = note.id, tags = note.tags }
+
+                if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
+                    for k, v in pairs(note.metadata) do
+                        out[k] = v
+                    end
+                end
+
+                return out
+            end,
             templates = {
                 folder = "900_Templates",
                 date_format = "%Y年%m月%d日",
