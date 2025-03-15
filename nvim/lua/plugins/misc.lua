@@ -87,6 +87,7 @@ return {
                 end
                 return tostring(os.date("%Y%m%d%H%M%S")) .. "-" .. suffix
             end,
+            disable_frontmatter = true,
             templates = {
                 folder = "900_Templates",
                 date_format = "%Y年%m月%d日",
